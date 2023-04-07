@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>bosshii.com@GitHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/vuetify@3.1.12/dist/vuetify.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+    <style>a {text-decoration:none; color:rgb(35, 90, 255)}</style>
+</head>
+
+<body>
+    <div id="app">
+        <v-app id="inspire">
+            <v-navigation-drawer v-model="drawer" app temporary>
+                <p class="text-center mt-13"><a href="//bosshii.com">bosshii.com</a></p>
+                <div class="mt-1 text-center">
+                    <v-btn class="justify-center" color="blue" href="//github.com/bosshii"><big>GitHub</big><v-icon>mdi-open-in-new</v-icon></v-btn>
+                </div>
+            </v-navigation-drawer>
+
+            <v-app-bar flat app>
+                <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+                <v-toolbar-title>bosshii.github.io</v-toolbar-title>
+                <div class='foo' style='margin-left: auto;'>
+                </div>
+            </v-app-bar>
+
+            <v-main><v-container>
+                <v-card elevation="4" class="py-2 mb-4" style="border-top: 5px solid rgb(0, 140, 255) !important">
+                    <v-card-title style="white-space: normal!important; word-break: keep-all;"><h2>bosshii.github.io</h2></v-card-title>
+                    <v-card-text>とりあえず開設<br><a href="//bosshii.com">bosshii.com</a> | <a href="//gsit.bosshii.com">Google Sites 版</a> | <a href="//github.com/bosshii">GitHub</a></v-card-text>
+                </v-card>
+                <v-card elevation="3" class="mb-4" style="border-top: 5px solid rgb(28, 243, 67)">
+                    <v-card-title>コンテンツ</v-card-title>
+                    <v-card-text><ul class="ml-3"><li><a href="janken">じゃんけん</a></li></ul></v-card-text>
+                </v-card>
+            </v-container></v-main>
+        </v-app>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vuetify@3.1.12/dist/vuetify.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
